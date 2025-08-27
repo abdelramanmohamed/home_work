@@ -10,8 +10,6 @@ void main() {
   for (var name in names) {
     counts[name] = (counts[name] ?? 0) + 1;
   }
-
-  // نطبع الأسماء اللي مكررة فقط
   counts.forEach((name, count) {
     if (count > 1) {
       print("$name appears $count times");
