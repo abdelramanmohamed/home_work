@@ -10,9 +10,6 @@ class Solution {
         testList.remove(char);
       }
     }
-    if (testList.isEmpty) {
-      return true;
-    } else
-      return false;
+    return (testList.isEmpty);
   }
 }
