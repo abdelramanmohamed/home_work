@@ -9,6 +9,6 @@ class Solution {
         return entry.key;
       }
     }
-    return -1;
+    throw Exception('no number found');
   }
 }
