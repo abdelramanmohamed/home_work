@@ -32,7 +32,7 @@ void main() {
 class Vehicle {
   String _brand = 'BMW';
   int _year = 1900;
-  int _fuelConsumtion;
+  int _fuelConsumtion; // per k
   int fuelCapacity;
 
   Vehicle(
