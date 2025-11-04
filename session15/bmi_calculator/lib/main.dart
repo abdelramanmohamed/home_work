@@ -27,25 +27,26 @@ class MyApp extends StatelessWidget {
                 ),
             ),
             backgroundColor: Color(0xff000319),
-            body: Padding(
-              padding: const EdgeInsets.all(18),
-              child: Column(
-                  children: [
-                     GenderRow(),
-                     SizedBox(height: 32,),
-                     HightContainer(),
-                     SizedBox(height: 32,),
-                     Row(
+            body: Column(
+                children: [
+                   GenderRow(),
+                   SizedBox(height: 32,),
+                   HightContainer(),
+                   SizedBox(height: 32,),
+                   Padding(
+                     padding: const EdgeInsets.symmetric(horizontal: 16),
+                     child: Row(
                        children: [
                          WightContainer(),
                          SizedBox(width: 36,),
                          AgeContainer()
+                        
                        ],
                      ),
-                     SizedBox(height: 32,),
-                     CulculateBottum()
-                  ],
-              ),
+                   ),
+                   SizedBox(height: 32,),
+                   CulculateBottum()
+                ],
             ),
         ),
     );
